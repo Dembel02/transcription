@@ -7,7 +7,9 @@ import librosa
 model = whisper.load_model("base")
 
 # Загрузить модель для диаризации (pyannote.audio)
-pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization", use_auth_token="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")
+pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization", 
+    use_auth_token="hf18_SbBzzjXRcJDzZOnxJzppqpTIUJYGSAjjoX",
+    local_files_only=True)
 
 # Выполнить диаризацию
 audio_path = "audioextract.mp3"

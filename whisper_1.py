@@ -1,9 +1,9 @@
 import whisper
 
-model = whisper.load_model("turbo")
+model = whisper.load_model("base")
 # whisper "audio.mp3" --language Russian
 # load audio and pad/trim it to fit 30 seconds
-audio = whisper.load_audio("2023-07-09-08-02-01.WAV")
+audio = whisper.load_audio("audioextract.mp3")
 audio = whisper.pad_or_trim(audio)
 
 # make log-Mel spectrogram and move to the same device as the model

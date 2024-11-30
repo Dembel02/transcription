@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Данные для графика
 categories = ['Доход', 'Затраты', 'Прибыль']
